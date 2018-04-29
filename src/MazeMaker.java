@@ -20,9 +20,9 @@ public class MazeMaker{
 		maze = new Maze(width, height);
 		
 		//select a random cell to start
-		
+		Cell start = maze.getCell(randGen.nextInt(),randGen.nextInt());
 		//call selectNextPath method with the randomly selected cell
-		
+		selectNextPath(start);
 		return maze;
 	}
 
