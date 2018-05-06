@@ -57,7 +57,7 @@ public class MazeMaker{
 			removeWalls(currentCell, cells.get(ran));
 			currentCell = cells.get(ran);
 			selectNextPath(currentCell);
-			System.out.println("SOHCAHTOA");
+			
 
 		} else {
 			if (!uncheckedCells.isEmpty()) {
