@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Stack;
 
+import org.omg.Messaging.SyncScopeHelper;
+
 
 public class MazeMaker{
 	
@@ -55,6 +57,7 @@ public class MazeMaker{
 			removeWalls(currentCell, cells.get(ran));
 			currentCell = cells.get(ran);
 			selectNextPath(currentCell);
+			System.out.println("SOHCAHTOA");
 
 		} else {
 			if (!uncheckedCells.isEmpty()) {
@@ -101,6 +104,6 @@ public class MazeMaker{
 			cells.add(maze.getCell(curX, curY - 1));
 		}
 		return cells;
-	
+		
 	}
 }
